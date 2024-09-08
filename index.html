@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+
+        <!-- Resume Form -->
+        <form id="resume-form">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <textarea id="experience" placeholder="Enter your experience" required></textarea>
+            <div>Please fill all the required fields to generate the resume.</div>
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <!-- Resume Preview -->
+        <div id="resume-result" class="hidden">
+            <h2>Your Resume</h2>
+            <div id="resume-content">
+                <!-- Resume content will be dynamically inserted here -->
+            </div>
+            <button id="download-pdf">Download PDF</button>
+            <input id="share-link" class="hidden" readonly>
+            <button id="copy-link">Copy Link</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
